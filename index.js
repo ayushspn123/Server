@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/rule-engine', {
+mongoose.connect('mongodb+srv://ayushvermaspn:eq41da4EIkehT76f@cluster0.8vjdo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/RuleEngine', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => console.log('MongoDB connected'));
